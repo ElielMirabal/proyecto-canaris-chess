@@ -1,0 +1,494 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* globales */
+
+body {
+    background: rgb(125, 156, 223);
+    background: linear-gradient(81deg, rgba(125, 156, 223, 1) 12%, rgba(241, 160, 150, 1) 84%);
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.espacio-top {
+    margin-top: 30px;
+}
+
+.espacio-botton {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p {
+    line-height: 20px;
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.contenido {
+    text-align: center;
+}
+
+.titulo {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.list li {
+    padding-right: auto;
+    padding-left: auto;
+    text-align: start;
+}
+
+
+/* header */
+
+.header {
+    background-image: url(../imagenes/imagen-principal.jpg);
+    height: 600px;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .header {
+        background-position-x: center;
+        background-position-y: -950px;
+    }
+}
+
+.barra {
+    align-items: center;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.barra a {
+    text-decoration: none;
+    color: rgb(0, 73, 255);
+}
+
+.logo {
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 0 0 30px #ffa;
+}
+
+.logo span {
+    font-weight: 700;
+    font-family: 'Anton', sans-serif;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    color: #ffa;
+    text-shadow: 0 0 30px rgb(30, 0, 111);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+
+/* navegacion */
+
+.navegacion {
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacion a {
+    padding-top: 30px;
+    text-shadow: 0 0 20px rgb(11, 5, 120);
+}
+
+.navegacion a:hover {
+    color: #ffa;
+    text-shadow: 0 0 20px #ffa;
+}
+
+.navegacion-general {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.navegacion-general a {
+    margin-right: 15px;
+}
+
+.navegacion-general a:last-of-type {
+    margin-right: 0;
+}
+
+.navegacion-general a:hover {
+    text-shadow: 0 0 20px #ffa;
+    color: #ffa;
+}
+
+
+/* pagina pricipal */
+
+.imagen-1 {
+    width: 22rem;
+    border-radius: 100px;
+}
+
+@media (min-width: 768px) {
+    .imagen-1 {
+        width: 40rem;
+    }
+}
+
+.piezas {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .piezas {
+        justify-content: space-between;
+    }
+}
+
+.piezas img {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    width: 130px;
+}
+
+.p-link a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.p-link a:hover {
+    font-weight: 600;
+    color: rgb(37, 16, 202);
+}
+
+.contenido-fases {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .contenido-fases {
+        flex-wrap: nowrap;
+    }
+}
+
+.borde {
+    padding: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    border: 5px solid;
+    border-image: linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
+    animation: rotate 2.5s ease-in infinite;
+    background: linear-gradient(180deg, rgba(105, 141, 219, 1) 12%, rgba(250, 118, 103, 1) 82%);
+}
+
+@keyframes rotate {
+    50% {
+        border-image: linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+    }
+}
+
+
+/* footer */
+
+footer {
+    background: rgb(162, 170, 169);
+    background: linear-gradient(94deg, rgba(162, 170, 169, 1) 12%, rgba(35, 36, 43, 0.7287114674971551) 49%, rgba(162, 170, 169, 1) 93%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a .logo-general {
+    margin-top: 25px;
+    margin-bottom: auto;
+}
+
+@media (min-width: 768px) {
+    a .logo-general {
+        margin: auto;
+    }
+}
+
+.site-footer a p {
+    color: rgb(0, 73, 255);
+    text-decoration: none;
+}
+
+.site-footer a {
+    text-decoration: none;
+}
+
+.logo-general {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.logo-general span {
+    font-weight: 700;
+    font-family: 'Anton', sans-serif;
+}
+
+.navegacion-general {
+    visibility: hidden;
+}
+
+@media (min-width: 768px) {
+    footer {
+        visibility: visible;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .site-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .site-footer a {
+        visibility: visible;
+    }
+    .site-footer nav a {
+        color: rgb(0, 73, 255);
+    }
+    .logo-general:hover {
+        text-shadow: 0 0 30px #ffa;
+    }
+}
+
+
+/* navegacion superior */
+
+.navegacion-superior {
+    background: rgb(162, 170, 169);
+    background: linear-gradient(94deg, rgba(162, 170, 169, 1) 12%, rgba(35, 36, 43, 0.7287114674971551) 49%, rgba(162, 170, 169, 1) 93%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/* paginas internas */
+
+
+/** aprende a jugar **/
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div ul {
+    text-align: start;
+    margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+    div ul {
+        text-align: center
+    }
+}
+
+.gifs {
+    padding: 20px 0 20px 0;
+}
+
+.texto ul {
+    text-align: start;
+    padding-left: 16px;
+}
+
+.gif-piezas {
+    padding-top: 15px;
+    border: 5px solid #dd2476;
+    margin-top: 20px;
+    background: linear-gradient(180deg, rgba(105, 141, 219, 1) 12%, rgba(250, 118, 103, 1) 82%);
+}
+
+.texto {
+    padding: 10px 10px 10px 10px;
+}
+
+@media (min-width: 768px) {
+    .gif-piezas img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .texto {
+        padding: 5px 5px 5px 5px;
+        border: 5px solid;
+        border-image: linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
+        width: 315px;
+        height: 315px;
+        background: linear-gradient(180deg, rgba(105, 141, 219, 1) 12%, rgba(250, 118, 103, 1) 82%);
+        animation: rotate 2.5s ease-in infinite;
+        transform: rotatey(0deg);
+        transition: 1s;
+        backface-visibility: hidden;
+    }
+    .gif-piezas {
+        border: none;
+        width: 310px;
+        height: 310px;
+        position: relative;
+        background: none;
+        padding-top: 0;
+    }
+    .texto:hover {
+        cursor: pointer;
+    }
+    .texto:active {
+        transform: rotatey(180deg);
+    }
+    .centrar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flex-2 {
+        display: flex;
+    }
+}
+
+
+/** pagina aperturas **/
+
+.contenido-principios div {
+    padding: 15px 15px 20px 15px;
+    margin-top: 20px;
+    border: 5px solid;
+    border-image: linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
+    background: linear-gradient(180deg, rgba(105, 141, 219, 1) 12%, rgba(250, 118, 103, 1) 82%);
+}
+
+.contenido-principios div ul {
+    text-align: start;
+}
+
+.contenido-principios div ol {
+    text-align: start;
+    padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+    .contenido-principios {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contenido-principios div {
+        width: 370px;
+        animation: rotate 2.5s ease-in infinite;
+    }
+}
+
+.video {
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+    .video {
+        display: flex;
+        width: 460px;
+        height: 310px;
+    }
+    .video:hover {
+        width: 560px;
+        height: 410px;
+        transition: 1s;
+    }
+    .videos {
+        padding-right: 370px;
+        padding-left: 370px;
+    }
+}
+
+
+/** pagina medio-juego **/
+
+.reglas-medio div {
+    margin-right: 15px;
+    margin-top: 15px;
+    padding: 10px;
+    border: 5px solid;
+    border-image: linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
+    background: linear-gradient(180deg, rgba(105, 141, 219, 1) 12%, rgba(250, 118, 103, 1) 82%);
+}
+
+.video-1 {
+    width: 360px;
+    height: 215px;
+}
+
+@media (min-width: 768px) {
+    .reglas-medio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .reglas-medio div {
+        animation: rotate 2.5s ease-in infinite;
+        width: calc(33.3% - 1rem);
+    }
+    .video-1 {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+
+/** pagina finales **/
+
+.final ul {
+    text-align: start;
+}
+
+@media (min-width: 768px) {
+    .final p {
+        text-align: start;
+    }
+}

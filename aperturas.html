@@ -6,23 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CanarisChess</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <a href="/index.html">
-            <p>CanarisChess</p>
-        </a>
+    <header class="navegacion-superior">
+        <div class="contenedor site-footer">
+            <a href="index.html">
+                <p class="logo-general">Canaris<span>Chess</span></p>
+            </a>
 
-        <nav>
-            <a href="aprende.html">Aprende a jugar</a>
-            <a href="aperturas.html">Aperturas</a>
-            <a href="medio-juego.html">Medio juego</a>
-            <a href="finales.html">Finales</a>
-        </nav>
+            <nav class="navegacion-general">
+                <a href="aprende.html">Aprende a jugar</a>
+                <a href="aperturas.html">Aperturas</a>
+                <a href="medio-juego.html">Medio juego</a>
+                <a href="finales.html">Finales</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="contenedor contenido">
         <section>
             <h1>Que es la Apertura?</h1>
             <p>En ajedrez se denomina apertura a la fase inicial del juego, en la que se procede a desarrollar las piezas desde sus posiciones iniciales. Las tres fases de una partida de ajedrez son: apertura, medio juego y final. Las secuencias de movimientos
@@ -31,80 +36,86 @@
             <p>La apertura es un elemento fundamental en el ajedrez. Una apertura sólida permitirá consolidar posiciones ventajosas; por el contrario, la debilidad en la apertura difícilmente podrá ser compensada en el posterior transcurso del juego.</p>
         </section>
 
-        <section>
-            <div>
-                <h2>Principios fundamentales de la apertura en ajedrez</h2>
-                <p>Todos los principiantes temen quedar perdidos en la apertura, caer en una trampa que les haga perder la partida antes de empezar. Este miedo les hace demandar que se les enseñe aperturas, sin darse cuenta de que lo más importante no es
-                    conocer todas las líneas de aperturas, sino saber terminar la partida. José Raúl Capablanca afirmaba, y lo han confirmado luego todos los grandes maestros que en el mundo han sido, que toda jugada está conectada con el final; la apertura
-                    está conectada con el medio juego, y este con el final. El final, además, puede estudiarse por sí mismo. No obstante, un mal comienzo de la apertura puede implicar un resultado catastrófico, que nos lleve a perder la partida antes
-                    de tiempo. Para evitar esto es necesario seguir estrictamente una serie de principios para asegurarnos un buen comienzo de la partida. El aficionado debe memorizar estos principios y aplicarlos siempre. Es necesario conocerlos bien
-                    antes de empezar a estudiar aperturas, ya que todas ellas se guían por estos mismos principios, resueltos de una manera o de otra. No solo evitará la catástrofe en la apertura, sino que podremos encontrar una jugada adecuada si el
-                    rival juega una variante desconocida para nosotros. Los aficionados no son, ni quieren ser, enciclopedias de aperturas.</p>
+        <section class="espacio-top">
 
-                <b>Conceptos clave</b>
-                <ul>
-                    <li><b>Centro</b>: Las casillas d4, e4, d5 y e5. Si incluimos las casillas adyacentes a estas hablamos de centro ampliado.</li>
-                    <li><b>Pieza centralizada</b>: Pieza colocada en una de las casillas centrales de tal manera que no sea fácilmente atacada.</li>
-                    <li><b>Tiempo</b>: Jugada útil para llevar a cabo un plan; en nuestro caso sacar las piezas y controlar el centro.</li>
-                    <li><b>Desarrollo</b>: Proceso de poner en juego nuestras piezas y peones.</li>
-                    <li><b>Espacio</b>: Cantidad de casillas dominadas por nuestras piezas, particularmente las que están detrás de la cadena de peones.</li>
-                </ul>
-                <b>Reglas para un buen desarrollo</b>
-                <ol>
-                    <li>Mover una pieza o un peón diferente en cada movimiento.</li>
-                    <li>Abrir el juego con los peones de rey o dama, ya que pueden ocupar el centro.</li>
-                    <li>En general, sacar los caballos antes que los alfiles, particularmente si son del mismo lado.</li>
-                    <li>No sacar la dama demasiado pronto, sobre todo a casillas avanzadas. Nos la atacarían y deberíamos romper la primera regla.</li>
-                    <li>Enrocar lo antes posible, para resguardar al rey y conectar las torres.</li>
-                    <li>Procurar hacer el menor número de movimientos de peón en el planteo.</li>
-                    <li>Procurar mantener, al menos, un peón en el centro.</li>
-                    <li>En general, colocar las torres en las columnas que estén libres de nuestros peones, o detrás de nuestros peones más avanzados, sobre todo si están pasados o pueden avanzar más casillas que otro.</li>
-                    <li>Enrocarse en las diez primeras jugadas, siempre que sea posible, ya que una avalancha de peones sobre el centro puede ser muy peligrosa.</li>
-                </ol>
-                <b>Reglas para desarrollar las piezas de manera activa y acumular tiempos</b>
-                <ol>
-                    <li>Colocar las piezas en casillas que amenacen el centro.</li>
-                    <li>Colocar las piezas en casillas que amenacen ganar material.</li>
-                    <li>Colocar las piezas en casillas que eviten una amenaza del rival.</li>
-                    <li>Colocar las piezas en casillas que dominen muchas casillas, particularmente en el campo contrario (movilidad).</li>
-                    <li>Colocar las piezas con armonía, es decir, en casillas que no estorben los movimientos de nuestras propias piezas.</li>
-                    <li>Colocar las piezas en lugares que hagan que las piezas enemigas dispongan de menos movilidad.</li>
-                    <li>Colocar las piezas presionando los puntos débiles del contrario.</li>
-                    <li>No hacer jugadas sin un objeto determinado (pérdida de tiempos).</li>
-                    <li>Crear diversas amenazas y así molestar al contrario.</li>
-                </ol>
+            <h2>Principios fundamentales de la apertura en ajedrez</h2>
+            <p class="espacio-top">Todos los principiantes temen quedar perdidos en la apertura, caer en una trampa que les haga perder la partida antes de empezar. Este miedo les hace demandar que se les enseñe aperturas, sin darse cuenta de que lo más importante no es conocer
+                todas las líneas de aperturas, sino saber terminar la partida. José Raúl Capablanca afirmaba, y lo han confirmado luego todos los grandes maestros que en el mundo han sido, que toda jugada está conectada con el final; la apertura está
+                conectada con el medio juego, y este con el final. El final, además, puede estudiarse por sí mismo. No obstante, un mal comienzo de la apertura puede implicar un resultado catastrófico, que nos lleve a perder la partida antes de tiempo.
+                Para evitar esto es necesario seguir estrictamente una serie de principios para asegurarnos un buen comienzo de la partida. El aficionado debe memorizar estos principios y aplicarlos siempre. Es necesario conocerlos bien antes de empezar
+                a estudiar aperturas, ya que todas ellas se guían por estos mismos principios, resueltos de una manera o de otra. No solo evitará la catástrofe en la apertura, sino que podremos encontrar una jugada adecuada si el rival juega una variante
+                desconocida para nosotros. Los aficionados no son, ni quieren ser, enciclopedias de aperturas.</p>
+            <div class="espacio-top contenido-principios">
+                <div>
+                    <h3>Conceptos clave</h3>
+                    <ul class="espacio-top">
+                        <li><b>Centro</b>: Las casillas d4, e4, d5 y e5. Si incluimos las casillas adyacentes a estas hablamos de centro ampliado.</li>
+                        <li><b>Pieza centralizada</b>: Pieza colocada en una de las casillas centrales de tal manera que no sea fácilmente atacada.</li>
+                        <li><b>Tiempo</b>: Jugada útil para llevar a cabo un plan; en nuestro caso sacar las piezas y controlar el centro.</li>
+                        <li><b>Desarrollo</b>: Proceso de poner en juego nuestras piezas y peones.</li>
+                        <li><b>Espacio</b>: Cantidad de casillas dominadas por nuestras piezas, particularmente las que están detrás de la cadena de peones.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Reglas para un buen desarrollo</h3>
+                    <ol class="espacio-top">
+                        <li>Mover una pieza o un peón diferente en cada movimiento.</li>
+                        <li>Abrir el juego con los peones de rey o dama, ya que pueden ocupar el centro.</li>
+                        <li>En general, sacar los caballos antes que los alfiles, particularmente si son del mismo lado.</li>
+                        <li>No sacar la dama demasiado pronto, sobre todo a casillas avanzadas. Nos la atacarían y deberíamos romper la primera regla.</li>
+                        <li>Enrocar lo antes posible, para resguardar al rey y conectar las torres.</li>
+                        <li>Procurar hacer el menor número de movimientos de peón en el planteo.</li>
+                        <li>Procurar mantener, al menos, un peón en el centro.</li>
+                        <li>En general, colocar las torres en las columnas que estén libres de nuestros peones, o detrás de nuestros peones más avanzados, sobre todo si están pasados o pueden avanzar más casillas que otro.</li>
+                        <li>Enrocarse en las diez primeras jugadas, siempre que sea posible, ya que una avalancha de peones sobre el centro puede ser muy peligrosa.</li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Reglas para desarrollar las piezas de manera activa y acumular tiempos</h3>
+                    <ol class="espacio-top">
+                        <li>Colocar las piezas en casillas que amenacen el centro.</li>
+                        <li>Colocar las piezas en casillas que amenacen ganar material.</li>
+                        <li>Colocar las piezas en casillas que eviten una amenaza del rival.</li>
+                        <li>Colocar las piezas en casillas que dominen muchas casillas, particularmente en el campo contrario (movilidad).</li>
+                        <li>Colocar las piezas con armonía, es decir, en casillas que no estorben los movimientos de nuestras propias piezas.</li>
+                        <li>Colocar las piezas en lugares que hagan que las piezas enemigas dispongan de menos movilidad.</li>
+                        <li>Colocar las piezas presionando los puntos débiles del contrario.</li>
+                        <li>No hacer jugadas sin un objeto determinado (pérdida de tiempos).</li>
+                        <li>Crear diversas amenazas y así molestar al contrario.</li>
+                    </ol>
+                </div>
             </div>
         </section>
 
-        <section>
+        <section class="espacio-top">
             <div>
                 <h2>Algunas aperturas de ejemplo</h2>
-                <b>Apertura española</b>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/hEHaBe1Z7wU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="espacio-top videos">
+                    <iframe class="video" src="https://www.youtube.com/embed/hEHaBe1Z7wU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                <b>Sistema londre</b>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/lvf0HZHf8wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video" src="https://www.youtube.com/embed/lvf0HZHf8wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                <b>defensa Francesa</b>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/mCqVNPBPQBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video" src="https://www.youtube.com/embed/mCqVNPBPQBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                <b>Defensa nimzo india</b>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/4TQID5YkrYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video" src="https://www.youtube.com/embed/4TQID5YkrYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <a href="/index.html">
-            <p>CanarisChess</p>
-        </a>
+    <footer class="espacio-top">
+        <div class="contenedor site-footer">
+            <a href="index.html">
+                <p class="logo-general">Canaris<span>Chess</span></p>
+            </a>
 
-        <nav>
-            <a href="aprende.html">Aprende a jugar</a>
-            <a href="aperturas.html">Aperturas</a>
-            <a href="medio-juego.html">Medio juego</a>
-            <a href="finales.html">Finales</a>
-        </nav>
+            <nav class="navegacion-general">
+                <a href="aprende.html">Aprende a jugar</a>
+                <a href="aperturas.html">Aperturas</a>
+                <a href="medio-juego.html">Medio juego</a>
+                <a href="finales.html">Finales</a>
+            </nav>
+        </div>
     </footer>
 </body>
 
