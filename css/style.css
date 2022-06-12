@@ -8,8 +8,7 @@
 /* globales */
 
 body {
-    background: rgb(125, 156, 223);
-    background: linear-gradient(81deg, rgba(125, 156, 223, 1) 12%, rgba(241, 160, 150, 1) 84%);
+    background: #158595;
 }
 
 .contenedor {
@@ -57,16 +56,8 @@ p {
 /* header */
 
 .header {
-    background-image: url(../imagenes/imagen-principal.jpg);
-    height: 600px;
+    background-image: url(../imagenes/tablero.jpg);
     background-size: cover;
-}
-
-@media (min-width: 768px) {
-    .header {
-        background-position-x: center;
-        background-position-y: -950px;
-    }
 }
 
 .barra {
@@ -85,13 +76,13 @@ p {
 
 .barra a {
     text-decoration: none;
-    color: rgb(0, 73, 255);
+    color: #27DEFD;
 }
 
 .logo {
     font-size: 60px;
     font-family: 'Dancing Script', cursive;
-    text-shadow: 0 0 30px #ffa;
+    text-shadow: 0 0 30px rgb(37, 37, 191);
 }
 
 .logo span {
@@ -237,8 +228,7 @@ h1 {
 /* footer */
 
 footer {
-    background: rgb(162, 170, 169);
-    background: linear-gradient(94deg, rgba(162, 170, 169, 1) 12%, rgba(35, 36, 43, 0.7287114674971551) 49%, rgba(162, 170, 169, 1) 93%);
+    background: #1A2E47;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -255,7 +245,7 @@ a .logo-general {
 }
 
 .site-footer a p {
-    color: rgb(0, 73, 255);
+    color: #27DEFD;
     text-decoration: none;
 }
 
@@ -293,7 +283,7 @@ a .logo-general {
         visibility: visible;
     }
     .site-footer nav a {
-        color: rgb(0, 73, 255);
+        color: #27DEFD;
     }
     .logo-general:hover {
         text-shadow: 0 0 30px #ffa;
@@ -304,8 +294,7 @@ a .logo-general {
 /* navegacion superior */
 
 .navegacion-superior {
-    background: rgb(162, 170, 169);
-    background: linear-gradient(94deg, rgba(162, 170, 169, 1) 12%, rgba(35, 36, 43, 0.7287114674971551) 49%, rgba(162, 170, 169, 1) 93%);
+    background: #1A2E47;
     padding-top: 20px;
     padding-bottom: 20px;
 }
