@@ -7,8 +7,12 @@
 
 /* globales */
 
+main {
+    min-height: 100vh;
+}
+
 body {
-    background: #158595;
+    background: #70ccdc;
 }
 
 .contenedor {
@@ -26,14 +30,28 @@ body {
 }
 
 h2 {
-    font-size: 30px;
-    font-weight: 700;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 22px;
 }
 
 p {
-    line-height: 20px;
-    font-weight: 300;
-    font-size: 17px;
+    font-family: 'Acme', sans-serif;
+    line-height: 25px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+b {
+    font-family: 'Acme', sans-serif;
+}
+
+ol {
+    font-family: 'Acme', sans-serif;
 }
 
 .contenido {
@@ -76,13 +94,13 @@ p {
 
 .barra a {
     text-decoration: none;
-    color: #27DEFD;
+    color: #ffa;
 }
 
 .logo {
     font-size: 60px;
     font-family: 'Dancing Script', cursive;
-    text-shadow: 0 0 30px rgb(37, 37, 191);
+    text-shadow: 0 0 30px rgba(186, 186, 122, 0.761);
 }
 
 .logo span {
@@ -102,7 +120,6 @@ p {
 h1 {
     font-size: 60px;
     color: #ffa;
-    text-shadow: 0 0 30px rgb(30, 0, 111);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -113,7 +130,8 @@ h1 {
 /* navegacion */
 
 .navegacion {
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     font-size: 20px;
     font-weight: bolder;
     display: flex;
@@ -122,12 +140,13 @@ h1 {
 
 .navegacion a {
     padding-top: 30px;
-    text-shadow: 0 0 20px rgb(11, 5, 120);
 }
 
 .navegacion a:hover {
     color: #ffa;
-    text-shadow: 0 0 20px #ffa;
+    text-shadow: 0 0 20px rgb(240, 240, 166);
+    font-size: 25px;
+    transition: 0.5s;
 }
 
 .navegacion-general {
@@ -186,14 +205,20 @@ h1 {
     width: 130px;
 }
 
+.piezas li {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 22px;
+    font-weight: 600;
+}
+
 .p-link a {
     text-decoration: none;
-    color: #000000;
+    color: rgb(37, 16, 202);
 }
 
 .p-link a:hover {
     font-weight: 600;
-    color: rgb(37, 16, 202);
+    color: #ffa;
 }
 
 .contenido-fases {
@@ -213,14 +238,14 @@ h1 {
     margin-left: 20px;
     margin-bottom: 30px;
     border: 5px solid;
-    border-image: linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
+    border-image: linear-gradient(#0fa8bd, #1A2E47, #1c64ff) 1;
     animation: rotate 2.5s ease-in infinite;
-    background: linear-gradient(180deg, rgba(105, 141, 219, 1) 12%, rgba(250, 118, 103, 1) 82%);
+    background: #698DDB;
 }
 
 @keyframes rotate {
     50% {
-        border-image: linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+        border-image: linear-gradient(360deg, #0fa8bd, #1A2E47, #1c64ff) 1;
     }
 }
 
@@ -245,7 +270,7 @@ a .logo-general {
 }
 
 .site-footer a p {
-    color: #27DEFD;
+    color: #ffa;
     text-decoration: none;
 }
 
@@ -283,7 +308,7 @@ a .logo-general {
         visibility: visible;
     }
     .site-footer nav a {
-        color: #27DEFD;
+        color: #ffa;
     }
     .logo-general:hover {
         text-shadow: 0 0 30px #ffa;
@@ -308,22 +333,24 @@ a .logo-general {
 .flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 div ul {
+    font-family: 'Acme', sans-serif;
     text-align: start;
     margin-left: 15px;
 }
 
-@media (min-width: 768px) {
-    div ul {
-        text-align: center
-    }
-}
-
 .gifs {
     padding: 20px 0 20px 0;
+}
+
+@media (min-width: 768px) {
+    .list-mover {
+        padding-left: 30%;
+        padding-right: 40%;
+    }
 }
 
 .texto ul {
@@ -333,9 +360,9 @@ div ul {
 
 .gif-piezas {
     padding-top: 15px;
-    border: 5px solid #dd2476;
+    border: 5px solid #1c64ff;
     margin-top: 20px;
-    background: linear-gradient(180deg, rgba(105, 141, 219, 1) 12%, rgba(250, 118, 103, 1) 82%);
+    background: #698DDB;
 }
 
 .texto {
@@ -349,23 +376,25 @@ div ul {
         left: 0;
         right: 0;
         bottom: 0;
+        width: 340px;
+        height: 340px
     }
     .texto {
-        padding: 5px 5px 5px 5px;
+        padding: 5px;
         border: 5px solid;
-        border-image: linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
-        width: 315px;
-        height: 315px;
-        background: linear-gradient(180deg, rgba(105, 141, 219, 1) 12%, rgba(250, 118, 103, 1) 82%);
+        border-image: linear-gradient(#0fa8bd, #1A2E47, #1c64ff) 1;
+        width: 350px;
+        height: 350px;
+        background: #698DDB;
         animation: rotate 2.5s ease-in infinite;
         transform: rotatey(0deg);
-        transition: 1s;
+        transition: 1.5s;
         backface-visibility: hidden;
     }
     .gif-piezas {
         border: none;
-        width: 310px;
-        height: 310px;
+        width: 350px;
+        height: 350px;
         position: relative;
         background: none;
         padding-top: 0;
@@ -392,8 +421,8 @@ div ul {
     padding: 15px 15px 20px 15px;
     margin-top: 20px;
     border: 5px solid;
-    border-image: linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
-    background: linear-gradient(180deg, rgba(105, 141, 219, 1) 12%, rgba(250, 118, 103, 1) 82%);
+    border-image: linear-gradient(#0fa8bd, #1A2E47, #1c64ff) 1;
+    background: #698DDB;
 }
 
 .contenido-principios div ul {
@@ -426,14 +455,8 @@ div ul {
         width: 460px;
         height: 310px;
     }
-    .video:hover {
-        width: 560px;
-        height: 410px;
-        transition: 1s;
-    }
     .videos {
-        padding-right: 370px;
-        padding-left: 370px;
+        display: inline-block;
     }
 }
 
@@ -445,8 +468,8 @@ div ul {
     margin-top: 15px;
     padding: 10px;
     border: 5px solid;
-    border-image: linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
-    background: linear-gradient(180deg, rgba(105, 141, 219, 1) 12%, rgba(250, 118, 103, 1) 82%);
+    border-image: linear-gradient(#0fa8bd, #1A2E47, #1c64ff) 1;
+    background: #698DDB;
 }
 
 .video-1 {
